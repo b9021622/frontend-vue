@@ -27,3 +27,7 @@ Student Features-
 -RegisterAttendance will take you to a page where you can type in the attendance code to register your attendance (this feature is tempremental and buggy)
 -Logout will log you out
 
+Admin Features
+-Navigate to http://localhost:8080/adminHome
+-from there you can add, edit and delete courses, modules and sesions
+currently there is no login system for the admin as it is an incomplete prototype
