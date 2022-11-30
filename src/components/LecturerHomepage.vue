@@ -2,14 +2,14 @@
 
 
     <div class="navbar-nav mr-auto">
-        <li class="nav-item">
+        <!-- <li class="nav-item">
           <router-link to="/lec-view-modules" class="nav-link">View My Modules</router-link>
-        </li>
+        </li> -->
         <li class="nav-item">
           <router-link to="/lec-view-sessions" class="nav-link">View My Sessions</router-link>
         </li>
         <li class="nav-item">
-          <router-link to="/myStudentsAttendance" class="nav-link">View My Students' Attendance</router-link>
+          <a @click = "logOut" class="nav-link">Log Out</a>
         </li>
         </div>
   </template>
@@ -22,6 +22,12 @@
         return this.$store.state.auth.user;
       }
     },
+    methods:{
+    logOut() {
+      this.$store.dispatch('auth/logout');
+      this.$router.push('/login');
+    },
+  },
     mounted() {
       if (!this.currentUser) {
         this.$router.push('/login');
