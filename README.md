@@ -3,6 +3,7 @@
 ## Project setup
 ```
 npm install
+follow prompts until there are 0 vulnerabilities
 ```
 
 ### Compiles and hot-reloads for development
