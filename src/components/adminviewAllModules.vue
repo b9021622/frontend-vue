@@ -79,11 +79,6 @@
         name: ""
       };
     },
-    computed: {
-        currentUser() {
-          return this.$store.state.auth.user;
-        }
-      },
     methods: {
       retrieveModules() {
         ModuleDataService.getAll().then(
@@ -91,7 +86,6 @@
               this.Modules = response.data;
           },
           error => {
-            this.$router.push("/login");
             this.Modules =
               (error.response && 
                error.response.data &&

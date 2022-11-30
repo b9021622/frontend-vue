@@ -77,7 +77,7 @@ export default {
 
       this.$store.dispatch("auth/login", user).then(
         () => {
-          this.$router.push("/LecturerHomepage");
+          this.$router.push("/LecturerHome");
         },
         (error) => {
           this.loading = false;

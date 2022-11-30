@@ -71,7 +71,6 @@
               //console.log(this.Sessions);
           },
           error => {
-            this.$router.push("/login");
             this.Sessions =
               (error.response && 
                error.response.data &&
