@@ -57,7 +57,7 @@ import LecturerDataService from "@/services/LecturerDataService";
 import CourseDataService from "../services/CourseDataService";
 
 export default {
-  name: "add-animal",
+  name: "add-course",
   data() {
     return {
       Course: {

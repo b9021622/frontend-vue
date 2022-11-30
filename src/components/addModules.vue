@@ -63,7 +63,7 @@
 import ModuleDataService from "../services/ModuleDataService";
 import CourseDataService from "../services/CourseDataService";
   export default {
-    name: "add-animal",
+    name: "add-module",
     data() {
       return {
         Module: {
