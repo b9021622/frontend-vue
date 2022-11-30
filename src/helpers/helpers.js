@@ -11,7 +11,7 @@ Vue.use(VueFlashMessage, {
 });
 
 const vm = new Vue();
-const baseURL = 'http://localhost:8081/login';
+const baseURL = 'http://localhost:3050/';
 
 const handleError = fn => (...params) =>
     fn(...params).catch(error => {
