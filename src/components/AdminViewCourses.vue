@@ -47,7 +47,7 @@
         </div>
         <div v-else>
           <br />
-          <p>Please click on an Animal...</p>
+          <p>Please click on a course...</p>
         </div>
       </div>
     </div>

@@ -98,7 +98,7 @@ import ModuleDataService from "../services/ModuleDataService";
 import SessionDataService from "../services/SessionDataService";
 //import StudentDataService from "../services/SessionDataService";
   export default {
-    name: "add-animal",
+    name: "add-session",
     data() {
       return {
         Session: {
