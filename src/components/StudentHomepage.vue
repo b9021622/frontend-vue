@@ -7,6 +7,9 @@
         <li class="nav-item">
           <router-link to="/stu-registerAtt" class="nav-link">RegisterAttendance</router-link>
         </li>
+        <li class="nav-item">
+          <a @click = "logOut" class="nav-link">Log Out</a>
+        </li>
         </div>
   </template>
   
