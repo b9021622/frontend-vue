@@ -144,29 +144,6 @@ getModule(value){
         
         
       },
-  
-    //   removeAllAnimals() {
-    //     AnimalDataService.deleteAll()
-    //       .then(response => {
-    //         console.log(response.data);
-    //         this.refreshList();
-    //       })
-    //       .catch(e => {
-    //         console.log(e);
-    //       });
-    //   },
-      
-    //   searchName() {
-    //     AnimalDataService.findByName(this.name)
-    //       .then(response => {
-    //         this.animals = response.data;
-    //         this.setActiveAnimal(null);
-    //         console.log(response.data);
-    //       })
-    //       .catch(e => {
-    //         console.log(e);
-    //       });
-    //   }
     },
     mounted() {
      

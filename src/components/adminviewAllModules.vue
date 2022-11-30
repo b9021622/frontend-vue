@@ -17,10 +17,6 @@
             {{Module.ModuleName}}
           </li>
         </ul>
-  
-        <!-- <button class="m-3 btn btn-sm btn-danger" @click="removeAllAnimals">
-          Remove All
-        </button> -->
       </div>
       <div class="col-md-6">
         <div v-if="currentModule">
@@ -142,29 +138,6 @@
         this.currentModule = Module;
         this.currentIndex = Module ? index : -1;
       },
-  
-    //   removeAllAnimals() {
-    //     AnimalDataService.deleteAll()
-    //       .then(response => {
-    //         console.log(response.data);
-    //         this.refreshList();
-    //       })
-    //       .catch(e => {
-    //         console.log(e);
-    //       });
-    //   },
-      
-    //   searchName() {
-    //     AnimalDataService.findByName(this.name)
-    //       .then(response => {
-    //         this.animals = response.data;
-    //         this.setActiveAnimal(null);
-    //         console.log(response.data);
-    //       })
-    //       .catch(e => {
-    //         console.log(e);
-    //       });
-    //   }
     },
     mounted() {
      
