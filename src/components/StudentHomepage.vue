@@ -31,20 +31,21 @@
   Chart.register(ArcElement);
 
 
-var totalSessions = 97;
-var sessionsAttended = 10;
+var totalSessions = 40;
+var sessionsAttended = 15;
 var percentageAttendance = (Math.round(((sessionsAttended/totalSessions)*100) * 100) / 100).toFixed(1);
 var BGC;
 
 if(percentageAttendance>50){
-  BGC = "orange";
+  BGC = "Green";
   if(percentageAttendance>80){
-    BGC = "#00A310";
+    BGC = "DarkGreen";
   }
 }
 else{
-  BGC = "red";
+  BGC = "LightGreen";
 }
+Chart.defaults.color = '#000';
 
 
   export default {
@@ -56,18 +57,19 @@ else{
             Sessions: [],
             Attended: [],
             chartData: {
-        labels: [ 'Attended', 'Missed'],
+        labels: [ 'Attended', 'Missed', 'HardCodedDataToDemonstrateAttendanceVisualisation'],
         datasets: [
           {
             data: [sessionsAttended, totalSessions-sessionsAttended],
             radius:[140],
             backgroundColor:[
             BGC,
-      "#E8F0FE",
-    ],
+            "#E8F0FE",
+            "#000000"
+            ],
     borderColor:[
-      "#ab47bc",
-      "#ab47bc"
+      "#0047bc",
+      "#ab4700", 
     ],
           }
         ]
