@@ -1,5 +1,6 @@
 <template>
   <h1>UoPS Admin - Module Details</h1>
+  <div><router-link :to="'/viewall-Modules/'"  class="btn btn-success">Back To Modules</router-link></div>
     <div v-if="currentModule" class="edit-form">
       <form>
         <div class="form-group">

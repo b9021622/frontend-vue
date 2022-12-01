@@ -1,5 +1,6 @@
 <template>
   <h1>UoPS Admin - Course Details</h1>
+  <div><router-link :to="'/view-courses/'"  class="btn btn-success">Back To Courses</router-link></div>
   <div v-if="currentCourse" class="edit-form">
     <form>
       <div class="form-group">

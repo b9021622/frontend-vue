@@ -51,6 +51,23 @@ export default {
 #danger{
   background-color:rgb(245, 121, 121);
 }
+#formstuff{
+  background-color: rgb(118, 118, 255);
+  border-color:transparent;
+}
+
+#TableID{
+  display: block;
+  height: 400px;
+  overflow-y: scroll;
+  border-style:solid;
+  border-color:black;
+}
+table td, table th {
+    border: 1px solid black;
+}
+
+
 
 </style>
 

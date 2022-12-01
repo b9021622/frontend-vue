@@ -5,14 +5,19 @@
       <p>{{}}</p>
         </div>
         <div class="form-group">
-        <label for="Code">Enter Attendance Code</label>
-        <input
+        <label for="Code"><h1>Enter Attendance Code</h1></label>
+        <div class="row">
+          <div class="col-4"></div>
+          <div class="col-4"> <input
           class="form-control"
           id="Code"
           required
           v-model="Code"
           name="Code"
-        />
+        /></div>
+        <div class="col-4"></div>
+        </div>
+       
       </div>
       <button @click="registerAttendance" class="btn btn-success">Submit</button>
       <h1>{{message}}</h1>

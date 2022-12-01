@@ -1,5 +1,6 @@
 <template>
-  <h1>UoPS Admin - Session Details</h1>
+  <h2>UoPS Admin - Session Details</h2>
+  <div><router-link :to="'/viewall-sessions/'"  class="btn btn-success">Back To Sessions</router-link></div>
   <div v-if="currentSession" class="edit-form">
     <form>
       <div class="form-group">

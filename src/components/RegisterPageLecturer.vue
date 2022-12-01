@@ -1,6 +1,6 @@
 <template>
   <div class="col-md-12">
-    <div class="card card-container">
+    <div class="card card-container" id ="formstuff">
       <img
         id="profile-img"
         src="//ssl.gstatic.com/accounts/ui/avatar_2x.png"
@@ -165,6 +165,6 @@ label {
 }
 
 .error-feedback {
-  color: red;
+  color: rgb(183, 247, 7);
 }
 </style>

@@ -3,7 +3,7 @@
     <div class="list row">
       <div class="col-md-12">
         <div>
-<table>
+<table id = "TableID">
   <thead>
     <tr>
       <th>Module</th>
@@ -21,13 +21,15 @@
       <td>{{row.SessionName}}</td>
       <td>{{ dateFormat(row.SessionDate)}}</td>
       <td>{{ timeFormat(row.SessionDate)}}</td>
-      <td><router-link :to="'/adminSDeets/' + row._id" class="badge badge-danger">Edit</router-link> </td>
+      <td><router-link :to="'/adminSDeets/' + row._id"  class="btn btn-success">Edit</router-link> </td>
     </tr>
   </tbody>
 </table>
+
         </div>
       </div>
     </div>
+    <div><router-link :to="'/adminHome/'"  class="btn btn-success">Back To Admin Home</router-link></div>
   </template>
   
   <script>

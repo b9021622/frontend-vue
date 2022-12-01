@@ -5,8 +5,9 @@
         </div>
       <div class="col-md-12">
         <h4>Upcoming Sessions</h4>
+        <div><router-link :to="'/lecturerHome'"  class="btn btn-success">Back To Modules</router-link></div>
         <div>
-<table>
+<table id="TableID">
   <thead>
     <tr>
       <th>Module</th>
@@ -25,7 +26,7 @@
       <td>{{row.SessionName}}</td>
       <td>{{ dateFormat(row.SessionDate)}}</td>
       <td>{{ timeFormat(row.SessionDate)}}</td>
-      <router-link :to="'/lec-view-code/' + row.AttendanceCode" class="badge badge-danger">View Code</router-link> 
+      <router-link :to="'/lec-view-code/' + row.AttendanceCode"  class="btn btn-success">View Code</router-link> 
      
     </tr>
   </tbody>

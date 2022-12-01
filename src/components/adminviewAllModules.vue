@@ -1,5 +1,6 @@
 <template>
   <h1>UoPS Admin - Module List</h1>
+  <div><router-link :to="'/adminHome/'"  class="btn btn-success">Back To Admin Home</router-link></div>
     <div class="list row">
       <div class="col-md-8">
         <div class="input-group mb-3"></div>
@@ -21,7 +22,7 @@
       </div>
       <div class="col-md-6">
         <div v-if="currentModule">
-          <router-link :to="'/adminDeets/' + currentModule._id" class="badge badge-danger">Edit</router-link> 
+          <router-link :to="'/adminDeets/' + currentModule._id"  class="btn btn-success">Edit</router-link> 
           <h4>Module</h4>
           
           <div>

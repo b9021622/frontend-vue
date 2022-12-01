@@ -1,18 +1,9 @@
 <template>
   <h1>UoPS Admin - Course List</h1>
+  <div><router-link :to="'/adminHome/'"  class="btn btn-success">Back To Admin Home</router-link></div>
     <div class="list row">
       <div class="col-md-8">
-        <div class="input-group mb-3">
-          <input type="text" class="form-control" placeholder="Search by name"
-            v-model="name"/>
-          <div class="input-group-append">
-            <button class="btn btn-outline-secondary" type="button"
-              @click="searchName"
-            >
-              Search
-            </button>
-          </div>
-        </div>
+    
       </div>
       <div class="col-md-6">
         <h4>Course List</h4>
@@ -30,7 +21,7 @@
       <div class="col-md-6">
         <div v-if="currentCourse">
           <h4>Course</h4>
-          <router-link :to="'/adminCDeets/' + currentCourse._id" class="badge badge-danger">Edit</router-link> 
+          <router-link :to="'/adminCDeets/' + currentCourse._id"  class="btn btn-success">Edit</router-link> 
           <div>
             <label><strong>CourseID:</strong></label> {{ currentCourse.CourseID }}
           </div>

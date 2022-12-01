@@ -1,5 +1,6 @@
 <template>
   <h1>UoPS Admin - Add Students to Module</h1>
+  <div><router-link :to="'/viewall-Modules/'"  class="btn btn-success">Back To Modules</router-link></div>
     <div class="list row">
       <div class="col-md-8">
         <div class="input-group mb-3"></div>
@@ -21,7 +22,7 @@
       </div>
       <div class="col-md-6">
           <div v-if="currentModule">
-            <button type="submit" class="badge badge-success"
+            <button type="submit" class="btn btn-success"
           @click="updateModule()"
         >
           Update

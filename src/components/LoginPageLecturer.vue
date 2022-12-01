@@ -1,7 +1,7 @@
 <template>
   <h2>Log In (Staff)</h2>
   <div class="col-md-12">
-    <div class="card card-container">
+    <div class="card card-container" id ="formstuff">
       <img
         id="profile-img"
         src="//ssl.gstatic.com/accounts/ui/avatar_2x.png"

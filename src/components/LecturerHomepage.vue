@@ -5,10 +5,10 @@
         </li> -->
         <h1>Lecturer Homepage</h1>
         <li class="nav-item">
-          <router-link to="/lec-view-sessions" class="nav-link">View My Sessions</router-link>
+          <router-link to="/lec-view-sessions"  class="btn btn-success">View My Sessions</router-link>
         </li>
         <li class="nav-item">
-          <a @click = "logOut" class="nav-link">Log Out</a>
+          <a @click = "logOut"  class="btn btn-success">Log Out</a>
         </li>
         </div>
   </template>
