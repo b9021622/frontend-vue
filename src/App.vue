@@ -67,7 +67,25 @@ table td, table th {
     border: 1px solid black;
 }
 
+/* width */
+::-webkit-scrollbar {
+  width: 30px;
+}
 
+/* Track */
+::-webkit-scrollbar-track {
+  background: rgb(118, 118, 255);
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: rgb(8, 0, 126); 
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555; 
+}
 
 </style>
 
