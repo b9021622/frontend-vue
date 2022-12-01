@@ -108,14 +108,18 @@ const routes = [
     },
     {
         path: '/stu-registerAtt',
-        name: '/stu-registerAtt',
+        name: 'stu-registerAtt',
         component: () => import("./components/RegisterAttendance")
     },
-    
     {
         path: '/lecturerHome',
         name: 'lecturerHome',
         component: () => import("./components/LecturerHomepage")
+    },
+    {
+        path: '/',
+        name: 'index',
+        component: () => import("./components/index")
     },
 
 ];

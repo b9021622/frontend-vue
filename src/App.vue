@@ -1,7 +1,6 @@
 <template>
+  <router-link to="/" class="nav-link"> <img src="./assets/ups.png" alt="logo" width="200" height="200"> </router-link>
   <div id="app">
-   
-
     <div class="container mt-3">
       <router-view />
     </div>

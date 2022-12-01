@@ -5,7 +5,7 @@
   <H2>Attendance Score: {{Attended.length/Sessions.length * 100}}</H2>
     <div class="navbar-nav mr-auto">
         <li class="nav-item">
-          <router-link to="/stu-registerAtt" class="nav-link">RegisterAttendance</router-link>
+          <router-link to="/stu-registerAtt" class="nav-link">Register Attendance</router-link>
         </li>
         <li class="nav-item">
           <a @click = "logOut" class="nav-link">Log Out</a>
