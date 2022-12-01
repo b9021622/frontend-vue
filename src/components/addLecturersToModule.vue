@@ -148,7 +148,6 @@ export default {
       console.log(this.currentModule.ModuleLecturers);
       if(!this.currentModule.ModuleLecturers.includes(id)){this.currentModule.ModuleLecturers.push(id)}
       
-      console.log("fish"),
       console.log(this.currentModuleLecturers)
     },
     chooseForRemoval(id){
@@ -159,9 +158,7 @@ export default {
         this.currentModule.ModuleLecturers.splice(index, 1); 
         this.currentModuleLecturers.splice(index, 1);
       }
-      //if(this.currentModule.ModuleLecturers.includes(id)){this.currentModule.ModuleLecturers.push(id)}
       
-      console.log("fish"),
       console.log(this.currentModuleLecturers)
     },
     updateModule() {

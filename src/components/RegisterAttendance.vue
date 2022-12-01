@@ -138,4 +138,3 @@ import StudentDataService from "../services/StudentDataService.js";
     }
   };
   </script>
-  
