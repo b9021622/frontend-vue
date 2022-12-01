@@ -20,7 +20,7 @@ export default {
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
   color: #2c3e50;
-  background-color: rgb(221, 221, 247);
+  background-color: rgb(118, 118, 255);
   margin-top: 60px;
 }
 </style>
@@ -39,8 +39,14 @@ export default {
   margin: 50px auto;
 }
 .btn.btn-success{
-  background-color:rgba(129, 138, 252, 0.527);
+  background-color:rgba(208, 211, 255, 0.527);
+  border-color: rgb(78, 78, 255);
+  margin-bottom: 2px;
   color: black;
+}
+.btn.btn-success:hover {
+  background-color: rgba(208, 211, 255, 0.123);
+  border-color: black;
 }
 #danger{
   background-color:rgb(245, 121, 121);
