@@ -25,7 +25,9 @@ Student Features-
 -Navigate to http://localhost:8080/registerStu and input student username , First name, Surname and Password
 -Navigate to http://localhost:8080/loginStu and input student username and passsword to access the lecturer homepage
 -Possible Sessions includes past sessions that could've been attended, sessions that were attended and a score calculated off those
--RegisterAttendance will take you to a page where you can type in the attendance code to register your attendance (this feature is tempremental and buggy due to a cacheing issue that I can't for the life of me solve, if you want to test the functionality then you can restart the backend when on the registerattendance page)
+-RegisterAttendance will take you to a page where you can type in the attendance code to register your attendance (this feature 
+is tempremental and buggy due to a cacheing issue that I can't for the life of me solve, 
+if you want to test the functionality then you can restart the backend when on the registerattendance page)
 -Logout will log you out
 
 Admin Features
