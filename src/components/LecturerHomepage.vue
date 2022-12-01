@@ -1,10 +1,9 @@
 <template>
-
-
     <div class="navbar-nav mr-auto">
         <!-- <li class="nav-item">
           <router-link to="/lec-view-modules" class="nav-link">View My Modules</router-link>
         </li> -->
+        <h1>Lecturer Homepage</h1>
         <li class="nav-item">
           <router-link to="/lec-view-sessions" class="nav-link">View My Sessions</router-link>
         </li>
