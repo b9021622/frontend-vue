@@ -30,3 +30,10 @@ export default {
     margin: 25px auto;
   }
   </style>
+
+
+<style>
+#StuGraph{
+  margin: 50px auto;
+}
+</style>
