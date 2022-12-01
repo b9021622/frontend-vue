@@ -1,4 +1,5 @@
 <template>
+  <h1>UoPS Admin - Course List</h1>
     <div class="list row">
       <div class="col-md-8">
         <div class="input-group mb-3">

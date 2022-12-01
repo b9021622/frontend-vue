@@ -1,4 +1,5 @@
 <template>
+  <h1>UoPS Admin - Session Details</h1>
   <div v-if="currentSession" class="edit-form">
     <form>
       <div class="form-group">
