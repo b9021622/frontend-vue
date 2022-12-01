@@ -15,7 +15,6 @@ class SessionDataService {
         return http.get(`/Session/code/${id}`)
     }
     getByCode(id){
-        console.log(id);
         return http.get(`/Session/bycode/${id}`)
     }
 

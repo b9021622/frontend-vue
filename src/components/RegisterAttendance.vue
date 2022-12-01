@@ -14,21 +14,21 @@
           name="Code"
         />
       </div>
-      <button @click="registerAttendance(Code)" class="btn btn-success">Submit</button>
+      <button @click="registerAttendance" class="btn btn-success">Submit</button>
       <h1>{{message}}</h1>
-
   </template>
   
   <script>
-  import SessionDataService from "@/services/SessionDataService";
+import SessionDataService from "../services/SessionDataService.js";
 import StudentDataService from "../services/StudentDataService.js";
   export default {
     name: 'ProfilePage',
+
     data() {
     return {
      Student: null,
      Modules: [],
-     Code : "",
+     Code : null,
      Session: null,
      message: ""
     };
@@ -100,7 +100,8 @@ import StudentDataService from "../services/StudentDataService.js";
     },
     registerAttendance(){
       console.log("HEre");
-      SessionDataService.getByCode(this.Code).then(
+      var code = this.Code;
+      SessionDataService.getByCode(code).then(
         response => {
           if(response.data == "Empty"){
             console.log(response.data);

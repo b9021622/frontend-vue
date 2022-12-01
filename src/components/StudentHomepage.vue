@@ -67,11 +67,11 @@
   }
 },
     mounted() {
-      
+      this.getAtt();
       if (!this.currentUser) {
         this.$router.push('/loginStu');
       }
-      this.getAtt();
+      
     }
     
   };
