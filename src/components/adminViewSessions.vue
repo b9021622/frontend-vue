@@ -1,10 +1,7 @@
 <template>
+  <h1>UoPS Admin - Session List</h1>
     <div class="list row">
       <div class="col-md-12">
-     
-        </div>
-      <div class="col-md-12">
-        <h4>Session List</h4>
         <div>
 <table>
   <thead>

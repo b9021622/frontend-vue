@@ -22,25 +22,29 @@
         <li class="nav-item">
           <router-link to="/register" class="nav-link">Register Lecturer</router-link>
         </li>
+        <li class="nav-item">
+          <a @click = "logOut" class="nav-link">Log Out</a>
+        </li>
     </div>
 </template>
   
 <script>
     export default {
-    name: "index-page",
-
-    components: {  },
-
-    data() {
-        return {
-        
-        };
-    },
+    name: 'IndexPage',
     computed: {
-        },
-    methods: {
-        },
+      currentUser() {
+        return this.$store.state.auth.user;
+      }
+    },
+    methods:{
+    logOut() {
+        if (this.currentUser) {
+            this.$store.dispatch('auth/logout');
+            this.$router.push('/login');
+        }
+    },
+  },
     mounted() {
     }
-    };
+  };
 </script>

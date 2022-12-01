@@ -1,4 +1,5 @@
 <template>
+  <h1>UoPS Admin - Add Modules</h1>
     <div class="submit-form">
       <div v-if="!submitted">
         <div class="form-group">

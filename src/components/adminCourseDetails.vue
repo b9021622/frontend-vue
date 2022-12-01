@@ -1,4 +1,5 @@
 <template>
+  <h1>UoPS Admin - Course Details</h1>
   <div v-if="currentCourse" class="edit-form">
     <form>
       <div class="form-group">

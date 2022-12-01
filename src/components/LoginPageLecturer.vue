@@ -1,4 +1,5 @@
 <template>
+  <h2>Log In (Staff)</h2>
   <div class="col-md-12">
     <div class="card card-container">
       <img

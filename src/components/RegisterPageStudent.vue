@@ -47,6 +47,7 @@
         :class="successful ? 'alert-success' : 'alert-danger'"
       >
         {{ message }}
+        <router-link to="/studentHome"  class="nav-link">Go to Student Homepage</router-link>
       </div>
     </div>
   </div>

@@ -1,4 +1,5 @@
 <template>
+  <h1>UoPS Admin - Module Details</h1>
     <div v-if="currentModule" class="edit-form">
       <form>
         <div class="form-group">

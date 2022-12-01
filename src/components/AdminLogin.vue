@@ -1,4 +1,5 @@
 <template>
+  <h1>UoPS Admin Login</h1>
   <div class="col-md-12">
     <div class="card card-container">
       <img
