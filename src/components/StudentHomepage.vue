@@ -11,6 +11,7 @@
           <a @click = "logOut" class="nav-link">Log Out</a>
         </li>
         </div>
+  <a @click = "logOut" class="nav-link">Log Out</a>
   </template>
   
   <script>
