@@ -1,4 +1,5 @@
 <template>
+  <h1>UoPS Admin - Add Students to Module</h1>
     <div class="list row">
       <div class="col-md-8">
         <div class="input-group mb-3"></div>
@@ -135,7 +136,7 @@
         console.log(this.currentModule.StudentsEnrolled);
         if(!this.currentModule.StudentsEnrolled.includes(id)){this.currentModule.StudentsEnrolled.push(id)}
         
-        console.log("fish"),
+        
         console.log(this.currentModuleStudents)
       },
       chooseForRemoval(id){
@@ -146,9 +147,6 @@
           this.currentModule.StudentsEnrolled.splice(index, 1); 
           this.currentModuleStudents.splice(index, 1);
         }
-        //if(this.currentModule.ModuleStudents.includes(id)){this.currentModule.ModuleStudents.push(id)}
-        
-        console.log("fish"),
         console.log(this.currentModuleStudents)
       },
       updateModule() {

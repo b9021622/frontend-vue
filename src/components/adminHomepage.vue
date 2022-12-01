@@ -1,6 +1,5 @@
 <template>
-
-
+  <h1>UoPS Admin Homepage</h1>
     <div class="navbar-nav mr-auto">
       <li class="nav-item">
           <router-link to="/view-courses" class="nav-link">View Courses</router-link>
@@ -50,4 +49,3 @@
     }
   };
   </script>
-  

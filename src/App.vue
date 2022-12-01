@@ -30,6 +30,7 @@ export default {
     margin: 25px auto;
   }
   </style>
+  
 
 
 <style>
@@ -37,3 +38,4 @@ export default {
   margin: 50px auto;
 }
 </style>
+
