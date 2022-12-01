@@ -42,18 +42,18 @@
         </ul>
     </div>
         <div>
-            <router-link :to="'/addLecsTo/' + currentModule._id" class="badge badge-danger">Add Lecturers</router-link> 
-            <router-link :to="'/addStuToMod/' + currentModule._id" class="badge badge-danger">Add Students</router-link> 
+            <router-link :to="'/addLecsTo/' + currentModule._id" class="btn btn-success">Add Lecturers</router-link> 
+            <router-link :to="'/addStuToMod/' + currentModule._id" class="btn btn-success">Add Students</router-link> 
     </div>
       </form>
   
-      <button class="badge badge-danger mr-2"
+      <button class="btn btn-success" id = "danger"
         @click="deleteModule"
       >
         Delete
       </button>
   
-      <button type="submit" class="badge badge-success"
+      <button type="submit" class="btn btn-success"
         @click="updateModule()"
       >
         Update

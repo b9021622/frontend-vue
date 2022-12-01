@@ -20,6 +20,7 @@ export default {
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
   color: #2c3e50;
+  background-color: rgb(221, 221, 247);
   margin-top: 60px;
 }
 </style>
@@ -37,5 +38,13 @@ export default {
 #StuGraph{
   margin: 50px auto;
 }
+.btn.btn-success{
+  background-color:rgba(129, 138, 252, 0.527);
+  color: black;
+}
+#danger{
+  background-color:rgb(245, 121, 121);
+}
+
 </style>
 

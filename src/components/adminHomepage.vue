@@ -2,26 +2,26 @@
   <h1>UoPS Admin Homepage</h1>
     <div class="navbar-nav mr-auto">
       <li class="nav-item">
-          <router-link to="/view-courses" class="nav-link">View Courses</router-link>
+          <router-link to="/view-courses" class="btn btn-success">View Courses</router-link>
         </li>
         <li class="nav-item">
-          <router-link to="/viewall-Modules" class="nav-link">View Modules</router-link>
+          <router-link to="/viewall-Modules" class="btn btn-success">View Modules</router-link>
         </li>
         <li class="nav-item">
-          <router-link to="/addcourse" class="nav-link">Add Course</router-link>
+          <router-link to="/addcourse" class="btn btn-success">Add Course</router-link>
         </li>
         <li class="nav-item">
-          <router-link to="/addMod" class="nav-link">Add Module</router-link>
+          <router-link to="/addMod" class="btn btn-success">Add Module</router-link>
         </li>
         <li class="nav-item">
-          <router-link to="/addSession" class="nav-link">Add Session</router-link>
+          <router-link to="/addSession" class="btn btn-success">Add Session</router-link>
         </li>
         <li class="nav-item">
-          <router-link to="/viewall-sessions" class="nav-link">View Sessions</router-link>
+          <router-link to="/viewall-sessions" class="btn btn-success">View Sessions</router-link>
         </li>
         
         <li class="nav-item">
-          <a class="nav-link" href @click.prevent="logOut">
+          <a class="btn btn-success" href @click.prevent="logOut">
             <font-awesome-icon icon="sign-out-alt" />LogOut
           </a>
         </li>

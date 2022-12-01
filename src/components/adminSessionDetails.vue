@@ -56,13 +56,13 @@
       
     </form>
 
-    <button class="badge badge-danger mr-2"
+    <button class="btn btn-success" id = "danger"
       @click="deleteSession"
     >
       Delete
     </button>
 
-    <button type="submit" class="badge badge-success"
+    <button type="submit" class="btn btn-success"
       @click="updateSession()"
     >
       Update

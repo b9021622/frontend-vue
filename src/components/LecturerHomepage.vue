@@ -1,4 +1,4 @@
-<template>
+<template class = "magic">
     <div class="navbar-nav mr-auto">
         <!-- <li class="nav-item">
           <router-link to="/lec-view-modules" class="nav-link">View My Modules</router-link>

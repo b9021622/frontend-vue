@@ -6,16 +6,18 @@
   <H2>Attendance Score: {{Attended.length/Sessions.length * 100}}</H2>
     <div class="navbar-nav mr-auto">
         <li class="nav-item">
-          <router-link to="/stu-registerAtt" class="nav-link">Register Attendance</router-link>
+          <router-link to="/stu-registerAtt" class="btn btn-success" >Register Attendance</router-link>
         </li>
         <li class="nav-item">
-          <a @click = "logOut" class="nav-link">Log Out</a>
+          <a @click = "logOut" class="btn btn-success">Log Out</a>
         </li>
         </div>
         <!--<H2>Attendance Score: {{Attended.length/Sessions.length * 100}}</H2>-->
-        <div>
+        <div class="row" >
+        <div class ="col-4"> </div>
+        <div class ="col-4">
       <Doughnut :chart-data="chartData"/></div>
-        
+    </div>
   </template>
   
   <script>
@@ -66,7 +68,7 @@ else{
     borderColor:[
       "#ab47bc",
       "#ab47bc"
-    ]
+    ],
           }
         ]
       }
