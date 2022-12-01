@@ -22,8 +22,9 @@ class StudentDataService {
         return http.post(`/Student/add/${id}`, data);
     }
     registerAttendance(id, data){
-        console.log(id);
-        return http.post(`/Student/attended/${id}`, data);
+        console.log("ID" + id);
+        console.log("Data " + data.ID);
+        return http.put("/Student/Students/attended/" + id, data);
     }
     update(id, data) {
         return http.put(`/Student/Students/${id}`, data);

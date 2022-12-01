@@ -29,7 +29,7 @@ import StudentDataService from "../services/StudentDataService.js";
      Student: null,
      Modules: [],
      Code : null,
-     Session: null,
+     Sessions: null,
      message: ""
     };
   },
@@ -50,10 +50,6 @@ import StudentDataService from "../services/StudentDataService.js";
         }),
         this.populateStuSessions();
     },
-    // getModules(){
-     
-
-    // },
     populateStuSessions(){
       //this.getModules();
       StudentDataService.getModules(this.$store.state.auth.user.id)
@@ -77,22 +73,43 @@ import StudentDataService from "../services/StudentDataService.js";
       
       
     },
+    retrieveSessions(){
+        SessionDataService.getAll().then(
+          response => {
+            console.log(response.data);
+              this.Sessions = response.data;
+              console.log("this.Sessions");
+              console.log(this.Sessions);
+          },
+          error => {
+            this.Sessions =
+              (error.response && 
+               error.response.data &&
+               error.response.data.message ) ||
+              error.message ||
+              error.toString();
+          }
+        )},
     fillInAttendance(){
       console.log("there");
-      console.log(this.Session[0]);
-      var data = {ID : this.Session[0]._id}
-      StudentDataService.registerAttendance(this.$store.state.auth.user.id, data)
+      console.log(this.Session._id);
+      var data = {ID : this.Session._id}
+      var studentID = this.$store.state.auth.user.id
+      StudentDataService.registerAttendance(studentID, data)
       .then(
         response => {
         console.log(response.data);
         if(response.data.modifiedCount == 1){
           this.message = "Successfully Registered";
+          this.$router.push('/StudentHome');
         }
         else{
           this.message= "Already Registered";
+          this.$router.push('/stu-registerAtt');
         }
         },
         error => {
+          console.log("dd");
           console.log(error);
         })
 
@@ -100,31 +117,22 @@ import StudentDataService from "../services/StudentDataService.js";
     },
     registerAttendance(){
       console.log("HEre");
-      var code = this.Code;
-      SessionDataService.getByCode(code).then(
-        response => {
-          if(response.data == "Empty"){
-            console.log(response.data);
-            this.message = "Session Not Found"
-          }
-          else{console.log("GETSESRES");
-          console.log(response.data);
-          this.Session = response.data;
+      for(var i = 0; i<this.Sessions.length; i++){
+        if(this.Sessions[i].AttendanceCode == this.Code){
+          this.Session = this.Sessions[i];
           this.fillInAttendance();
-
-          }
-        
-        }).catch(
-        error => {
-          console.log(error);
-        })
-
+        }
+      }
+      if(this.Session == null){
+        this.message = "Session Not Found";
+      }
     },
   },
     mounted() {
+      this.retrieveSessions();
       this.getStu();
       if (!this.currentUser) {
-        this.$router.push('/login');
+        this.$router.push('/loginStu');
       }
       
     }
