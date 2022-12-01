@@ -1,8 +1,9 @@
 <template>
 
   <h2>Possible Sessions:  {{Sessions.length}}</h2>
-  <h2>Sessions Attended:  {{Attended.length}}</h2>
-  <h2>Attendance Score: {{Attended.length/Sessions.length * 100}}</h2>
+
+  <h2>Sessions Attended: {{Attended.length}}</h2>
+  <H2>Attendance Score: {{Attended.length/Sessions.length * 100}}</H2>
     <div class="navbar-nav mr-auto">
         <li class="nav-item">
           <router-link to="/stu-registerAtt" class="nav-link">Register Attendance</router-link>
@@ -11,7 +12,8 @@
           <a @click = "logOut" class="nav-link">Log Out</a>
         </li>
         </div>
-        <div><H2>Attendance Score: {{Attended.length/Sessions.length * 100}}</H2>
+        <!--<H2>Attendance Score: {{Attended.length/Sessions.length * 100}}</H2>-->
+        <div>
       <Doughnut :chart-data="chartData"/></div>
         
   </template>
@@ -27,7 +29,7 @@
   Chart.register(ArcElement);
 
 
-  var totalSessions = 97;
+var totalSessions = 97;
 var sessionsAttended = 10;
 var percentageAttendance = (Math.round(((sessionsAttended/totalSessions)*100) * 100) / 100).toFixed(1);
 var BGC;
@@ -56,6 +58,7 @@ else{
         datasets: [
           {
             data: [sessionsAttended, totalSessions-sessionsAttended],
+            radius:[140],
             backgroundColor:[
             BGC,
       "#E8F0FE",
@@ -118,3 +121,4 @@ else{
 
 
   </script>
+
