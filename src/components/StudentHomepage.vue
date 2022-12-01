@@ -2,7 +2,7 @@
 
   <h2>Possible Sessions:  {{Sessions.length}}</h2>
   <h2>Sessions Attended:  {{Attended.length}}</h2>
-  <H2>Attendance Score: {{Attended.length/Sessions.length * 100}}</H2>
+  <h2>Attendance Score: {{Attended.length/Sessions.length * 100}}</h2>
     <div class="navbar-nav mr-auto">
         <li class="nav-item">
           <router-link to="/stu-registerAtt" class="nav-link">Register Attendance</router-link>

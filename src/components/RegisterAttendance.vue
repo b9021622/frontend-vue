@@ -5,7 +5,7 @@
       <p>{{}}</p>
         </div>
         <div class="form-group">
-        <label for="Code">Code</label>
+        <label for="Code">Enter Attendance Code</label>
         <input
           class="form-control"
           id="Code"
